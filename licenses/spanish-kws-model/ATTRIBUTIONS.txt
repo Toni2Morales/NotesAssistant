@@ -1,0 +1,48 @@
+MODEL ATTRIBUTION
+=================
+
+Model:
+TKA KWS — Spanish (Zipformer transducer)
+
+Model repository:
+https://huggingface.co/jguerrisi/sherpa-onnx-kws-zipformer-es-3M-2026-08-08
+
+The model card identifies the following technologies and resources:
+
+1. sherpa-onnx
+   Project: https://github.com/k2-fsa/sherpa-onnx
+   Role: Keyword spotting inference and model compatibility.
+
+2. icefall
+   Project: https://github.com/k2-fsa/icefall
+   Role: Model training recipe and Zipformer transducer approach.
+
+3. Multilingual LibriSpeech (MLS)
+   Role: Spanish speech training data.
+   The model card identifies MLS as a training resource and indicates
+   that it is derived from LibriVox.
+   Dataset information: https://www.openslr.org/94/
+
+4. MUSAN
+   Role: Noise augmentation during training.
+   Dataset information: https://www.openslr.org/17/
+
+5. Piper voices
+   Role: Synthetic speech augmentation for keyword training.
+   The model card reports using multiple Piper voices.
+   Project: https://github.com/rhasspy/piper
+
+IMPORTANT
+---------
+
+The exact Piper voices used by the model must be identified and their
+individual licenses checked before redistribution.
+
+The applicable dataset and voice attribution requirements must also
+be verified before distributing the model files.
+
+This document records the resources identified in the model card.
+It does not replace the original licenses or notices of those resources.
+
+Source:
+https://huggingface.co/jguerrisi/sherpa-onnx-kws-zipformer-es-3M-2026-08-08

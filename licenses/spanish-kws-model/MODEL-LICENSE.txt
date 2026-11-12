@@ -1,0 +1,38 @@
+MODEL LICENSE INFORMATION
+========================
+
+Model name:
+TKA KWS — Spanish (Zipformer transducer, approximately 3.3M parameters)
+
+Repository:
+https://huggingface.co/jguerrisi/sherpa-onnx-kws-zipformer-es-3M-2026-08-08
+
+Author / publisher:
+jguerrisi
+
+License declared in the Hugging Face model repository:
+Apache License 2.0 (Apache-2.0)
+
+IMPORTANT LICENSE SCOPE NOTICE
+------------------------------
+
+The repository metadata declares Apache-2.0. However, the model card also
+states that the training process uses third-party datasets and synthetic
+speech generated with Piper voices.
+
+The model card explicitly advises users to verify the license of each
+specific Piper voice and the applicable attribution requirements before
+redistributing the model files.
+
+Therefore, this document records the license declared by the repository
+but does not independently establish that every training resource,
+voice, or third-party component is covered by Apache-2.0.
+
+Before redistributing the model files, verify the applicable rights and
+attribution requirements for the model weights and all relevant
+third-party resources.
+
+Source of license information:
+The model card in the repository listed above.
+
+This document is informational and is not legal advice.
