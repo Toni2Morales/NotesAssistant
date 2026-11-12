@@ -1,4 +1,3 @@
-
 cmake_minimum_required(VERSION 3.20)
 
 project(NotesAssistant LANGUAGES CXX)
@@ -11,14 +10,17 @@ set(SHERPA_ROOT
     "${CMAKE_CURRENT_SOURCE_DIR}/external/sherpa-onnx"
 )
 
-# Nuestro ejecutable
 add_executable(NotesAssistant
     src/main.cpp
+    src/audio_capture.cpp
+    src/audio_capture.h
+    src/miniaudio_impl.cpp
 )
 
 # Cabeceras de sherpa-onnx
 target_include_directories(NotesAssistant PRIVATE
     "${SHERPA_ROOT}/include"
+    "${CMAKE_CURRENT_SOURCE_DIR}/external/miniaudio"
 )
 
 # Biblioteca C++ de sherpa-onnx
