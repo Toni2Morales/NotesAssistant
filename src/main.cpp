@@ -6,7 +6,6 @@
 #include <chrono>
 #include <vector>
 #include <cstdint>
-#include <cmath>
 
 #include <sherpa-onnx/c-api/cxx-api.h>
 
@@ -73,19 +72,6 @@ int main() {
 
             while (running) {
                 if (audio.getAudioChunk(chunk)) {
-                    double sumSquares = 0.0;
-
-                    for (float sample : chunk) {
-                        sumSquares += sample * sample;
-                    }
-
-                    double rms = chunk.empty()
-                        ? 0.0
-                        : std::sqrt(sumSquares / chunk.size());
-
-                    std::cout << "\rVolumen RMS: "
-                        << rms << "       " << std::flush;
-
                     // Enviar las muestras al detector.
                     stream.AcceptWaveform(
                         16000,
