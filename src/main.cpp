@@ -52,7 +52,7 @@ int main() {
         // 2. Crear el flujo de audio del detector.
         auto stream = spotter.CreateStream();
 
-        // 3. Iniciar el micrófono.
+        // 3. Iniciar el micrÃ³fono.
         AudioCapture audio;
 
         if (!audio.start()) {
@@ -79,7 +79,7 @@ int main() {
                         static_cast<int32_t>(chunk.size())
                     );
 
-                    // Procesar todo el audio que esté listo.
+                    // Procesar todo el audio que estÃ© listo.
                     while (spotter.IsReady(&stream)) {
                         spotter.Decode(&stream);
 
@@ -87,7 +87,7 @@ int main() {
 
                         if (!result.keyword.empty()) {
                             std::cout
-                                << "\n\n¡PALABRA DE ACTIVACION DETECTADA!\n";
+                                << "\n\nÂ¡PALABRA DE ACTIVACION DETECTADA!\n";
 
                             std::cout
                                 << "Frase: "
